@@ -1,0 +1,49 @@
+What is the file name to read from?
+hw9-2.txt
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 12
+1 0 b
+2 . this is a comment
+3 begin
+4 load M(0)
+5 load -M(0)
+6 . line 7 does not have correct syntax
+7 load -M0)
+8 . if your program continues to this comment, ERROR read the specs.
+9 halt
+
+PC: 3 IR = begin
+PC: 4 AC: nop MQ: 0
+----------------------------------------------------
+PC: 4 IR = load M(0)
+PC: 5 AC: 12 MQ: 0
+----------------------------------------------------
+PC: 5 IR = load -M(0)
+PC: 6 AC: -12 MQ: 0
+----------------------------------------------------
+PC: 6 IR = . line 7 does not have correct syntax
+PC: 7 AC: -12 MQ: 0
+----------------------------------------------------
+PC: 7 IR = load -M0)
+Not the correct syntax, ending program.
+PC: 7 AC: -12 MQ: 0
+----------------------------------------------------
+0 12
+1 0 b
+2 . this is a comment
+3 begin
+4 load M(0)
+5 load -M(0)
+6 . line 7 does not have correct syntax
+7 load -M0)
+8 . if your program continues to this comment, ERROR read the specs.
+9 halt
